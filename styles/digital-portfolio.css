@@ -1,0 +1,222 @@
+@font-face {
+    font-family: Oceanwide;
+    src: url(/resources/Oceanwide-Semibold.otf);
+}
+
+body {
+    margin: 0px;
+    padding:0px;
+    font-family: Oceanwide;
+}
+
+/* navbar */
+
+.navbar {
+    width: 100%;
+    height: 55px;
+    border-bottom: 2px solid #2b2b2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 79px;
+    overflow: hidden;
+    position: sticky;
+    background-color: white;
+    opacity: 0.8;
+    z-index: 1000;
+    top: 0;
+}
+
+.navbar .homebutton {
+    text-decoration: none;
+    font-family: Oceanwide;
+    font-weight: lighter;
+    font-size: 30px;
+    color: #2979FF;
+    margin-left: 9px;
+    margin-bottom: -5px;
+}
+
+.navbar .rearrangebutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 79px;
+
+}
+
+.navbar .button {
+    text-decoration: none;
+    font-family: Oceanwide;
+    font-weight: lighter;
+    font-size: 19px;
+    color: #2b2b2b;
+    margin-bottom: -9px;
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+
+.navbar .button:hover {
+    color: #2979FF;
+}
+
+/* contents (image-desc + texts-portfolios) */
+
+.contents {
+    display: flex;
+    justify-content: flex-start;
+    align-content:flex-start;
+    gap:50px
+}
+
+/* image-desc */
+
+.contents .image-desc {
+    height:800px;
+    width:400px;
+    background-color: #2b2b2b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    margin-top:5px;
+    border-radius: 0px 20px 20px 0px;
+
+}
+
+.contents .image-desc .image {
+    background-image: url(../img/portrait.jpg);
+    width:300px;
+    height:400px;
+    background-size: contain;
+    border-radius: 10px;
+    transition: 0.4s ease;
+}
+
+.contents .image-desc .image:hover {
+    transform: rotate(7deg);
+} 
+
+.contents .image-desc .text1 {
+    font-family: Oceanwide;
+    color:#fafafa;
+}
+
+.contents .image-desc .spaces {
+    width:400px;
+    height:200px;
+}
+
+/* texts - portfolios */
+
+.contents .texts-portfolios {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.contents .texts-portfolios .brief-info h2 {
+    font-size: 36px;
+    color:#2979FF;
+    margin-bottom:-10px;
+}
+
+.contents .texts-portfolios h2 {
+    font-size: 36px;
+    color:#2979FF;
+    margin-bottom:-10px;
+}
+
+.contents .texts-portfolios .contacts a {
+    text-decoration: none;
+    color:#000000;
+}
+
+.contents .texts-portfolios .portfolios .container-portfolios {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top:20px;
+    gap:50px;
+}
+
+.contents .texts-portfolios .portfolios .container-portfolios .p {
+    width:300px;
+    height:300px;
+    border:4px solid #DDDDDD;
+    border-radius:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    transition: 0.3s ease;
+}
+
+.contents .texts-portfolios .portfolios .container-portfolios .p:hover {
+    transform: scale(1.1);
+}
+.contents .texts-portfolios .portfolios .container-portfolios .p img {
+    border: 1.5px solid #000000;
+    border-radius: 10px;
+}
+
+.contents .texts-portfolios .portfolios .container-portfolios .p a {
+    text-decoration: none;
+    color: #2b2b2b;
+    border:2px solid #2b2b2b;
+    padding:9px 18px 5px 12px;
+    border-radius:30px;
+    text-align: center;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.contents .texts-portfolios .portfolios .container-portfolios .p a:hover {
+    background-color: #2b2b2b;
+    color:white;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 215px;
+    background: #2B2B2B;
+    background: linear-gradient(92deg, rgba(43, 43, 43, 1) 0%, rgba(145, 145, 145, 1) 100%);
+    margin-top: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#fafafa;
+    font-family: Oceanwide;
+    font-weight:100;
+    gap:15%
+}
+
+.slogan {
+    font-size:37px;
+    padding-left: 3%;
+    padding-bottom:1.5%
+}
+
+.link1 {
+    display:flex;
+    align-items: center;
+    gap:5%;
+    width:35%;
+    flex-direction: row;
+}
+
+.link1 a {
+    text-decoration:none;
+    color:white;
+    margin-top:2%;
+    transition:0.3s ease;
+}
+
+.link1 a:hover {
+    color:#4e9fe5;
+}
+
+
